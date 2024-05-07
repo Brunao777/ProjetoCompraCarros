@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Front-end</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="database.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="./img/logo.webp" alt="Logo">
+    <p>cars</p>
+  </header>
+  <main>
+    <section>
+      <div class="listagem">
+        <ul class="listaProdutos">
+          <li>
+            <img src="./img/supra.jpg" alt="Supra">
+            <p>Toyota Supra ano:1998</p>
+            <p class="valor">Valor: 90.000</p>
+            <button id="car_1" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/skyline.webp" alt="Skyline">
+            <p>Nissan Skyline ano:1997</p>
+            <p class="valor">Valor: 110.000</p>
+            <button id="car_2" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/rx7.jpg" alt="RX7">
+            <p>Mazda RX7 ano:1999</p>
+            <p class="valor">Valor: 170.000</p>
+            <button id="car_3" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/impreza.jpg" alt="Impreza">
+            <p>Subaru Impreza ano:1996</p>
+            <p class="valor">Valor: 100.000</p>
+            <button id="car_4" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/lancer.webp" alt="Lancer">
+            <p>Mitsubish Lancer ano:2008</p>
+            <p class="valor">Valor: 190.000</p>
+            <button id="car_5" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/nsx.jpg" alt="NSX">
+            <p>NSX Acura ano:1991</p>
+            <p class="valor">Valor: 150.000</p>
+            <button id="car_6" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/civic.jpg" alt="Civic">
+            <p>Honda Civic ano:1998</p>
+            <p class="valor">Valor: 50.000</p>
+            <button id="car_7" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/ferrari-roma.webp" alt="Roma">
+            <p>Ferrari Roma ano:2019</p>
+            <p class="valor">Valor: 2.000.000</p>
+            <button id="car_8" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/jaguar.jpg" alt="Pace">
+            <p>Jaguar Pace ano:2015</p>
+            <p class="valor">Valor: 1.500.000</p>
+            <button id="car_9" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/porsche-cayenne-ehybrid.webp" alt="Cayenne">
+            <p>Porche Hybrid ano:2020</p>
+            <p class="valor">Valor: 560.000</p>
+            <button id="car_10" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/Hennessey-H700_Corvette_C8_Stingray.jpg" alt="C8">
+            <p>Corvette C8 ano:2019</p>
+            <p class="valor">Valor: 2.700.000</p>
+            <button id="car_11" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/Shelby-GT500-CR-Fibra-de-Carbono-frente.webp" alt="Shelby GT500">
+            <p>Mustang Shelby GT500 ano:1967</p>
+            <p class="valor">Valor: 200.000</p>
+            <button id="car_12" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/bmw-i5.webp" alt="i5">
+            <p>BMW i5 ano:2025</p>
+            <p class="valor">Valor: 900.000</p>
+            <button id="car_13" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/050321_aston_martin_DB9_hmed.jpg" alt="DB9">
+            <p>Aston Martin DB9 ano:2004</p>
+            <p class="valor">Valor: 2.500.000</p>
+            <button id="car_14" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/avaliacao-mercedes-benz-c-180-exclusive.jpg" alt="C180">
+            <p>Mercedez Bens C180 ano:1993</p>
+            <p class="valor">Valor: 180.000</p>
+            <button id="car_15" class="productButton">Comprar</button>
+          </li>
+          <li>
+            <img src="./img/Lamborghini-Murcielago-LP-640-6.avif" alt="Murcielago">
+            <p>Lamborghini Murciélago ano:2001</p>
+            <p class="valor">Valor: 700.000</p>
+            <button id="car_16" class="productButton">Comprar</button>
+          </li>
+       </ul>
+      </div>
+      <div class="inputPesquisa">
+        <input type="text" placeholder="pesquise o carro aqui!">
+        <button>Pesquisar</button>
+      </div>
+      <div class="listagemCarrinho">
+        <h2>Carrinho:<small id="favQuantidade"> (0)</small></h2>
+        <h2>Valor Total <small id="totalValor">R$: </small></h2>
+        <ul id="listaCarrinho"></ul>
+      </div>
+      <div class="div_btn">
+        <button id="btnFinalizarCompra">Finalizar Compra</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
